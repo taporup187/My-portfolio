@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+
+:root {
+    --firstcolor: #4361EE;
+    --sceondcolor: #7209B7;
+    --head: #3B3B3B;
+    --paragraph: #747474;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4361EE;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4361EE;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: var(--sceondcolor);
+}
+
+::selection {
+    color: #fff;
+    background: var(--sceondcolor);
+}
+
+img {
+    /* user-drag: none;   */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    /* font-family: 'Fira Code', monospace; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* ====================================================
+                    social and gmail
+===================================================*/
+.social {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 999;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.social ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 120px;
+    margin: 0px auto;
+    background-color: var(--head);
+}
+
+.social ul li {
+    line-height: 2.5;
+}
+
+.social ul li a {
+    font-size: 28px;
+    color: var(--head);
+
+}
+
+.social ul li a :hover {
+    color: var(--sceondcolor);
+    /* text-shadow: 0 0 20px #d697ff; */
+    transition: ease-in-out .5s;
+}
+
+.gmail {
+    position: fixed;
+    bottom: 0%;
+    right: 40px;
+    z-index: 999;
+    bottom: 0;
+    left: auto;
+    z-index: 999;
+}
+
+.gmail ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.gmail ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 120px;
+    margin: 0px auto;
+    background-color: var(--head);
+}
+
+.gmail a {
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: var(--head);
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    transition: ease-in .5s;
+    letter-spacing: 0px;
+}
+
+.gmail a:hover {
+    color: var(--sceondcolor);
+}
+
+/* ====================================================
+                    headder
+===================================================*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px #dadada;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav ul li a {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    text-align: center;
+    transition: ease-in-out .5s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--firstcolor) !important;
+}
+
+.resume a {
+    color: var(--sceondcolor) !important;
+
+    border: 2px solid var(--sceondcolor);
+    border-radius: 8px;
+    transition: ease-in .3s;
+}
+
+.resume i {
+    font-size: larger;
+}
+
+.resume a:hover {
+    color: #fff !important;
+    background-color: var(--sceondcolor);
+
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+    color: var(--sceondcolor);
+
+}
+
+/* ====================================================
+                    about
+===================================================*/
+.about {
+    width: 100%;
+    background: linear-gradient(#7209b7, #4e4ce1, #8ea2ff);
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.about .txt1 {
+    padding-top: 6%;
+}
+
+.about h5 {
+    font-family: 'Fira Code', monospace;
+}
+
+.about h1 {
+    font-weight: 800;
+}
+
+.about p {
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+.about a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    background: var(--sceondcolor);
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+}
+
+.about a:hover>i {
+    padding-left: 1%;
+    transition: ease-in;
+    transition-duration: .5s;
+
+}
+
+/* ====================================================
+                    work
+===================================================*/
+.heading-work {
+    padding: 4vh 0vh;
+}
+
+.heading-work h5 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    color: var(--head);
+}
+
+.heading-work h1 {
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: var(--firstcolor);
+}
+
+.heading-work p {
+    color: var(--paragraph);
+}
+
+.work {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.work::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background: #C5C5C5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 0px;
+}
+
+.container2 {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.container2 img {
+    margin-left: 30px;
+    position: relative;
+    top: 50px
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.content h4 {
+    font-weight: 600;
+}
+
+.content a {
+    color: var(--firstcolor);
+    position: relative;
+    top: 30px;
+    padding: 10px 15px;
+    border: 2px solid var(--firstcolor);
+    border-radius: 10px;
+    font-family: 'Fira Code', monospace;
+    transition: ease-in-out .5s;
+    font-weight: 600;
+}
+
+.content a:hover,
+.content a:focus {
+    color: #fff;
+    background: var(--firstcolor);
+}
+
+.container2.left {
+    left: 0;
+}
+
+.container2.right {
+    left: 50%;
+}
+
+
+.container2.right::after {
+    left: -8px;
+}
+
+.container2::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    top: calc(50% - 1px);
+    right: 0px;
+    background: #C5C5C5;
+    z-index: 1;
+}
+
+.container2.right::before {
+    left: 8px;
+}
+
+
+.container2 .icon {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* padding: 9px 0; */
+    top: calc(50% - 16px);
+
+    border: 5px solid #7209B7;
+    border-radius: 40px;
+    text-align: center;
+    margin-right: -10px;
+    color: white;
+    z-index: 1;
+}
+
+.container2.left .icon {
+    right: 56px;
+}
+
+.container2.right .icon {
+    left: 56px;
+}
+
+.container2 .content {
+    padding: 30px 90px 30px 30px;
+
+    position: relative;
+    border-radius: 0 500px 500px 0;
+}
+
+.container2.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+}
+
+.container2 .content h2 {
+    margin: 0 0 10px 0;
+
+    font-weight: 600;
+    color: #3B3B3B;
+}
+
+.container2 .content p {
+    margin: 0;
+
+    line-height: 22px;
+    color: #747474;
+}
+
+
+
+/* ====================================================
+                    contact
+===================================================*/
+.contact {
+    padding: 20vh 0vh;
+
+}
+
+.contact h5 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    color: var(--head);
+}
+
+.contact h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: var(--firstcolor);
+}
+
+.contact p {
+    color: var(--paragraph);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1.5em;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #a7a7a7;
+    border-radius: 15px;
+}
+
+form label {
+    font-size: .9rem;
+}
+
+form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #a7a7a7;
+    transition: ease-out .5s;
+}
+
+form input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--head);
+}
+
+form textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #a7a7a7;
+    transition: ease-out .5s;
+}
+
+form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid var(--head);
+}
+
+form button {
+    width: 30%;
+    padding: 10px 15px;
+    background-color: var(--sceondcolor);
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    transition: ease-in-out .5s;
+}
+
+form button:hover {
+    border-radius: 30px;
+    box-shadow: 0 0 10px #cf87ff;
+}
+
+/* ====================================================
+                    footer
+===================================================*/
+footer .icon4 a {
+    font-size: 30px;
+    color: var(--paragraph);
+    transition: ease-in-out .5s;
+}
+
+footer .icon4 a:hover,
+footer .icon4 a:focus {
+    color: var(--head);
+}
+
+footer .icon4 i {
+    margin: 0 20px;
+}
+
+/* ====================================================
+                    graphic design page
+===================================================*/
+.banner1 {
+    width: 100%;
+    background: url(../img/graphicdesign-banner.png);
+    padding: 15vh 0vh;
+    
+    
+}
+
+.banner1 h1 {
+    font-weight: 600;
+    letter-spacing: 12pt;
+    line-height: 2;
+}
+
+.breadcrumb-item a {
+    color: var(--head) !important;
+    font-weight: 600;
+}
+
+.show-case {
+    padding: 10vh 0vh;
+    width: 100%;
+}
+
+.show-case .card {
+    outline: none;
+    border: none;
+    transition: ease-in-out .5s;
+    border-radius: 10px;
+}
+
+.show-case .card img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    
+}
+.show-case .card-body img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    
+}
+.card-body h5{
+    color: var(--sceondcolor);
+    font-weight: 600;
+}
+.card-body p{
+    color: var(--paragraph);
+}
+.card-body span{
+    color: var(--paragraph);
+    font-size: .8rem;
+}
+.show-case .card:hover {
+    box-shadow: 0 0 10px #a7a7a7;
+    transform: scale(105%);
+}
+
+.show-case .card:hover>img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: ease-in-out .3s;
+}
+/* ====================================================
+                    Interface design page
+===================================================*/
+.banner2 {
+    width: 100%;
+    background: linear-gradient(#7209b7, #4e4ce1, #8ea2ff);
+    background-attachment: fixed;
+    color: #fff;
+    
+    
+    
+}
+
+.banner2 h1 {
+    font-weight: 600;
+    letter-spacing: 12pt;
+    line-height: 2;
+    padding-top: 40px;
+}
+.travago h1{
+    color: var(--head);
+    font-weight: 700;
+    padding: 2vh 0;
+}
+.travago p{
+    padding: 2vh 0;
+    color: var(--paragraph);
+}
+
+/* ====================================================
+                    @media
+===================================================*/
+@media (max-width:1024px) {
+
+    .social,
+    .gmail {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+
+    nav ul li .nav-link {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .work::after {
+        left: 90px;
+    }
+
+    .container2 {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+
+    .container2::before {
+        width: 30px;
+    }
+
+    .container2.right {
+        left: 0%;
+    }
+
+    .container2.left::after,
+    .container2.right::after {
+        left: 82px;
+    }
+
+    .container2.left::before,
+    .container2.right::before {
+        left: 60px;
+        border-color: transparent var(--sceondcolor) transparent transparent;
+    }
+
+    .container2.left .date,
+    .container2.right .date {
+        right: auto;
+        left: 15px;
+    }
+
+    .container2.left .icon,
+    .container2.right .icon {
+        right: auto;
+        left: 12px;
+    }
+
+    .container2.left .content,
+    .container2.right .content {
+        padding: 10px 10px 10px 10px;
+
+    }
+
+    .show-case .card-parent {
+        width: 95%;
+
+    }
+    .show-case .row{
+        --bs-gutter-x: 1rem;
+    }
+    .show-case .card:hover {
+        box-shadow: 0 0 10px #a7a7a7;
+        transform: none;
+    }
+
+    .show-case .card-parent {
+        padding: 0 10px;
+    }
+}
