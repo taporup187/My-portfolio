@@ -1,132 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taporup webfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- bootsrrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/1c44fb3eac.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taporup webfolio</title>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <!-- bootsrrap link -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awsome -->
-  <script src="https://kit.fontawesome.com/1c44fb3eac.js" crossorigin="anonymous"></script>
+    <style>
+      /* font link */
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
 
+      body {
+        color: white;
+        margin: 0;
 
-  <style>
-    /* font link */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
-
-    body {
-      color: white;
-      margin: 0;
-
-
-      overflow: hidden;
-      font-family: 'Montserrat', sans-serif;
-
-    }
-
-    .gredient {
-      width: 100vw;
-      height: 100vh;
-      background-image: linear-gradient(115deg, #7209B7 0%, #4361EE 60%, #1BDEE5 100%);
-
-
-    }
-
-    p {
-      color: rgba(255, 255, 255, 0.788)
-    }
-
-    .header {
-      top: 34%;
-    }
-
-    h1 {
-      font-weight: 700;
-      /* font-size: 2.2rem; */
-    }
-
-    h5 {
-      font-family: 'Fira Code', monospace;
-      color: #fff;
-    }
-
-    p {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 180%;
-      color: #fcfcfc;
-
-    }
-
-    .btn {
-      font-family: 'Fira Code', monospace;
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: ease-in-out .5s;
-    }
-
-
-
-    .btn:hover>i {
-      padding-left: 10px;
-      color: #4361EE;
-      transition: ease-in .5s;
-    }
-
-    .btn {
-      border-radius: 8px;
-      border: 2px solid #fff;
-      padding: 10px 25px;
-      color: #fff;
-    }
-
-    .btn:hover,
-    .btn:focus {
-      color: #4361EE;
-      background: #fff;
-    }
-
-    @media only screen and (max-width: 790px) {
-      .header {
-        top: 10%
+        overflow: hidden;
+        font-family: "Montserrat", sans-serif;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="gredient d-flex justify-content-center">
-    <div class="container-fluid fixed-top header text-left  ">
+      .gredient {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(
+          115deg,
+          #7209b7 0%,
+          #4361ee 60%,
+          #1bdee5 100%
+        );
+      }
 
-      <div class="row">
-        <div class="col-0 col-md-3  "></div>
-        <div class="col-12 col-md-6  ">
+      p {
+        color: rgba(255, 255, 255, 0.788);
+      }
 
-          <h5>Hi! my name is Taporup Boliar</h5>
-          <h1>I Empower users through intuitive and engaging Digital Experiences </h1>
-          <p>As a learner with a strong foundation in front-end development and a passion for user experience
-            design, I am excited to begin my career in the tech industry. During my studies, I had the opportunity to
-            work on several projects where I honed my skills in HTML, CSS, and JavaScript. I also had the chance to
-            learn about user experience design principles and how to apply them in the development process. let's take
-            a
-            short tour of my visual projects. </p>
-          <a href='main.html' class="btn">Take a short tour <i class="fa-solid fa-circle-arrow-right"></i> </a>
+      h1 {
+        font-weight: 700;
+      }
+
+      h5 {
+        font-family: "Fira Code", monospace;
+        color: #fff;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 180%;
+        color: #fcfcfc;
+      }
+
+      .btn {
+        font-family: "Fira Code", monospace;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: ease-in-out 0.5s;
+      }
+
+      .btn:hover > i {
+        padding-left: 10px;
+        color: #4361ee;
+        transition: ease-in 0.5s;
+      }
+
+      .btn {
+        border-radius: 8px;
+        border: 2px solid #fff;
+        padding: 10px 25px;
+        color: #fff;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        color: #4361ee;
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gredient d-flex justify-content-center align-items-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-0 col-md-1 col-lg-3"></div>
+          <div class="col-12 col-md-10 col-lg-6">
+            <h5>Hi! my name is Taporup Boliar</h5>
+            <h1>
+              I Empower users through intuitive and engaging Digital Experiences
+            </h1>
+            <p>
+              As a learner with a strong foundation in front-end development and
+              a passion for user experience design, I am excited to begin my
+              career in the tech industry. During my studies, I had the
+              opportunity to work on several projects where I honed my skills in
+              HTML, CSS, and JavaScript. I also had the chance to learn about
+              user experience design principles and how to apply them in the
+              development process. let's take a short tour of my visual
+              projects.
+            </p>
+            <a href="main.html" class="btn"
+              >Take a short tour <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-0 col-md-1 col-lg-3"></div>
         </div>
-        <div class="col-0 col-md-3  "></div>
       </div>
     </div>
-
-  </div>
-
-
-
-</body>
-
+  </body>
 </html>

@@ -94,7 +94,6 @@ body {
 
 .social ul li a :hover {
   color: var(--sceondcolor);
-  /* text-shadow: 0 0 20px #d697ff; */
   transition: ease-in-out 0.5s;
 }
 
@@ -148,7 +147,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 10px #dadada;
+  /* box-shadow: 0 2px 10px #dadada; */
 }
 
 a {
@@ -157,6 +156,7 @@ a {
 
 nav {
   background-color: #fff;
+  
 }
 
 nav ul li a {
@@ -183,7 +183,8 @@ nav ul li a:focus {
   font-size: larger;
 }
 
-.resume a:hover {
+.resume a:hover,
+.resume a:focus {
   color: #fff !important;
   background-color: var(--sceondcolor);
 }
@@ -207,10 +208,14 @@ nav ul li a:focus {
   background: linear-gradient(#7209b7, #4e4ce1, #8ea2ff);
   background-attachment: fixed;
   color: #fff;
+ 
 }
 
 .about .txt1 {
-  padding-top: 6%;
+  padding-top: 4%;
+  /* position: relative;
+  left: 0;
+  top: 60px; */
 }
 
 .about h5 {
@@ -246,7 +251,7 @@ nav ul li a:focus {
                     work
 ===================================================*/
 .heading-work {
-  padding: 4vh 0vh;
+  padding-top: 6vh;
 }
 
 .heading-work h5 {
@@ -515,7 +520,7 @@ footer .icon4 i {
 
 .banner1 h1 {
   font-weight: 600;
-  letter-spacing: 12pt;
+  letter-spacing: 6pt;
   line-height: 2;
 }
 
@@ -570,7 +575,7 @@ footer .icon4 i {
 ===================================================*/
 .show-case .btn {
   color: var(--firstcolor);
-
+  font-weight: 600;
   padding: 10px 15px;
   border: 2px solid var(--firstcolor);
   border-radius: 8px;
@@ -584,14 +589,14 @@ footer .icon4 i {
   outline: none;
   box-shadow: none;
 }
-.device-img{
-    filter: grayscale(100%);
+.device-img {
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
-.d-parent:hover >.device-img{
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    transition: ease-in-out 0.5s; 
+.d-parent:hover > .device-img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  transition: ease-in-out 0.5s;
 }
 /* ====================================================
                     Interface design page
@@ -620,9 +625,43 @@ footer .icon4 i {
 }
 
 /* ====================================================
+                    pagination1
+===================================================*/
+.pagination1 {
+  padding: 10vh;
+}
+.pagination1 .btn3 {
+  border: 2px solid var(--sceondcolor);
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: var(--sceondcolor);
+  font-family: "Fira Code", monospace;
+  transition: ease-in-out 0.5s;
+  font-weight: 600;
+}
+.pagination1 .btn3:hover,
+.pagination1 .btn3:focus {
+  color: #fff;
+  background-color: var(--sceondcolor);
+}
+.pagination1 .btn4 {
+  border: 2px solid var(--firstcolor);
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: var(--firstcolor);
+  font-family: "Fira Code", monospace;
+  transition: ease-in-out 0.5s;
+  font-weight: 600;
+}
+.pagination1 .btn4:hover,
+.pagination1 .btn4:focus {
+  color: #fff;
+  background-color: var(--firstcolor);
+}
+/* ====================================================
                     @media
 ===================================================*/
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .social,
   .gmail {
     display: none;
