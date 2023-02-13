@@ -147,7 +147,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  /* box-shadow: 0 2px 10px #dadada; */
 }
 
 a {
@@ -493,6 +492,7 @@ form button:focus {
 /* ====================================================
                     footer
 ===================================================*/
+
 footer .icon4 a {
   font-size: 30px;
   color: var(--paragraph);
@@ -626,12 +626,24 @@ footer .icon4 i {
 }
 
 /* ====================================================
+                    javascript project
+===================================================*/
+.card-body span{
+  padding: 10px 0px;
+  color: var(--head);
+}
+.javascript-page{
+  color: var(--sceondcolor);
+  font-weight: 600;
+  font-family: 'Fira Code', monospace;
+}
+/* ====================================================
                     pagination1
 ===================================================*/
-.pagination1 {
+.pagination {
   padding: 10vh;
 }
-.pagination1 .btn3 {
+ .btn3 {
   border: 2px solid var(--sceondcolor);
   border-radius: 8px;
   padding: 10px 15px;
@@ -640,12 +652,12 @@ footer .icon4 i {
   transition: ease-in-out 0.5s;
   font-weight: 600;
 }
-.pagination1 .btn3:hover,
-.pagination1 .btn3:focus {
-  color: #fff;
+ .btn3:hover,
+ .btn3:focus {
+  color: #fff !important;
   background-color: var(--sceondcolor);
 }
-.pagination1 .btn4 {
+ .btn4 {
   border: 2px solid var(--firstcolor);
   border-radius: 8px;
   padding: 10px 15px;
@@ -654,9 +666,9 @@ footer .icon4 i {
   transition: ease-in-out 0.5s;
   font-weight: 600;
 }
-.pagination1 .btn4:hover,
-.pagination1 .btn4:focus {
-  color: #fff;
+ .btn4:hover,
+ .btn4:focus {
+  color: #fff !important;
   background-color: var(--firstcolor);
 }
 /* ====================================================
