@@ -638,16 +638,21 @@ footer .icon4 i {
   font-size: 1.5rem;
 }
 
-.col-12 img {
-  opacity: 0.7;
+.thumb img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   cursor: pointer;
-  margin: 2rem;
+  
   width: 100%;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s;
+
 }
 
-.col-12 img:hover {
-  opacity: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.thumb img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+    
 }
 /* ====================================================
                     team project project
